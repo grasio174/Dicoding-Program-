@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tugas akhir website</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   <main>
+<!-- header -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">RM.Berkat</a>
+
+      <nav class="navbar">
+         <ul>
+         <a href="#home">home</a>
+         <a href="artikel.html">artikel</a> 
+         <a href="#menu">menu</a>
+         <a href="#order">pemesanan</a>
+      </ul>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header -->
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="slide-container">
+
+         <div class="slide active">
+            <div class="image">
+               <img src="images/home-img-1.png" alt="">
+            </div>
+            <div class="content">
+               <h3>selamat menikmati hidangan kami</h3>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+</div>
+
+
+<!-- menu -->
+
+<section id="menu" class="menu">
+
+   <h1 class="heading"> menu</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="price">Rp. <span>25.000</span>/-</div>
+         <img src="images/nasgor1.png" alt="">
+         <div class="name">Nasi goreng ayam</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="pilih" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rp. <span>15.000</span>/-</div>
+         <img src="images/nasgor2.png" alt="">
+         <div class="name">Nasi goreng udang</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="pilih" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rp. <span>15.000</span>/-</div>
+         <img src="images/nasgor3.png" alt="">
+         <div class="name">Nasi goreng cumi</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="pilih" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rp. <span>20.000</span>/-</div>
+         <img src="images/nasgor4.png" alt="">
+         <div class="name">Nasi goreng briyani</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="pilih" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rp. <span>20.000</span>/-</div>
+         <img src="images/nasgor5.png" alt="">
+         <div class="name">Nasi goreng kecap</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="pilih" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rp. <span>12.000</span>/-</div>
+         <img src="images/nasgor6.png" alt="">
+         <div class="name">Nasi goreng Putih</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="pilih" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+
+   </div>
+
+</section>
+
+<!-- menu -->
+
+
+
+<!-- order -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">Pesan Sekarang</h1>
+
+   <form action="" method="post">
+
+      <div class="display-orders">
+         <p>silahkan masukkan <span> detail pemesanan</span></p>
+
+      </div>
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>nama  :</span>
+            <input type="text" name="name" class="box" required placeholder="masukkan nama" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>nomor telp  :</span>
+            <input type="number" name="number" class="box" required placeholder="masukkan no.telp" min="0">
+         </div>
+         <div class="inputBox">
+            <span>metode pembayaran </span>
+            <select name="method" class="box">
+               <option value="cash on delivery">Tunai</option>
+               <option value="gopay">Go-pay</option>
+               <option value="dana">DANA</option>
+               <option value="ovo">OVO</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>alamat rumah  :</span>
+            <input type="text" name="flat" class="box" required placeholder="alamat jln.RT/RW" maxlength="50">
+         </div>
+      </div>
+
+      <input type="submit" value="Pesan" class="btn" name="order">
+
+   </form>
+
+</section>
+
+<!-- order -->
+
+
+
+<!-- footer -->
+
+<footer class="footer">
+
+
+
+   <div class="credit">
+      tugas akhir by <span>Grasio.S Carel</span> | Bangkit Academy 2023!
+   </div>
+
+</footer>
+   </main>
+
+<!-- footer -->
+
+<!-- custom js link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
